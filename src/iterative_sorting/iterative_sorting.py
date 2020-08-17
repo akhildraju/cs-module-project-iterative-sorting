@@ -14,9 +14,11 @@ def selection_sort(arr):
         # TO-DO: swap
         # Your code here
         if cur_index!= smallest_index:
-            value = arr[smallest_index]
-            arr[smallest_index] = arr[cur_index]
-            arr[cur_index] = value
+            # value = arr[smallest_index]
+            # arr[smallest_index] = arr[cur_index]
+            # arr[cur_index] = value
+            arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
+
 
     return arr
 
